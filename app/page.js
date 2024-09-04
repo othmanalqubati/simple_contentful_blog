@@ -6,8 +6,8 @@ import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 
 var client=createClient({
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  space: process.env.CONTENTFUL_SPACE_ID
+  accessToken: 'gd9ujtDDczHG2IhLRuBSD4ytgjgoiPqQVCOCE4taSjE',
+  space: 'iizmzncindgg'
   }
 );
 export async function getPosts() {
