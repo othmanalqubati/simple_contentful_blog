@@ -12,8 +12,7 @@ var client=createClient({
 );
 export async function getPosts() {
     const res=await client.getEntries({content_type: 'post'});
-    console.log('res.items');
-    console.log(res.items);
+
     return {
       props: {
         posts: res.items
@@ -21,7 +20,7 @@ export async function getPosts() {
     }
 }
 export default async function Home() {
-  const res = await client.getEntries({ content_type: 'blogPage' }); // Replace with your content type ID
+  const res = await client.getEntries({ content_type: 'blogPage' }); 
   const posts = res.items;
 
   return (
